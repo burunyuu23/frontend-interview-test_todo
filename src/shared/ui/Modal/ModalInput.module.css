@@ -1,0 +1,39 @@
+.input {
+	box-sizing: border-box;
+	padding: 8px;
+	height: 46px;
+	width: 100%;
+	background: transparent;
+	border: 2px solid #3f72af;
+	border-radius: 4px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 46px;
+}
+
+.input::placeholder {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.input:focus {
+	outline: none;
+}
+
+.wrapper {
+	box-sizing: border-box;
+	width: 364px;
+	position: relative;
+	margin-bottom: 34px;
+}
+
+.large {
+	width: 100%;
+}
+
+.icon {
+	position: absolute;
+	left: 55px;
+	top: -11px;
+	z-index: 1;
+}

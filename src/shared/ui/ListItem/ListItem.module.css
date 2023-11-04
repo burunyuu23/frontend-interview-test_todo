@@ -1,0 +1,66 @@
+.item {
+	box-sizing: border-box;
+	padding: 10px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	width: 1000px;
+	height: 80px;
+	border-bottom: 2px solid #3f72af;
+}
+
+.item:hover {
+	background-color: rgba(37, 127, 234, 0.2);
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.titleContainer {
+	display: flex;
+	align-items: center;
+}
+
+.title {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 20px;
+	color: #000000;
+	margin-right: 16px;
+}
+
+.category {
+	font-weight: 400;
+	font-size: 18px;
+	color: #3f72af;
+}
+
+.category::before {
+	content: url("../../icons/folder.svg");
+	margin-right: 4px;
+	position: relative;
+	top: 3px;
+}
+
+.descriptionContainer {
+	color: #808080;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+.button {
+	cursor: pointer;
+	box-sizing: border-box;
+	width: 25px;
+	height: 25px;
+	border: none;
+	background: transparent;
+}
+
+.button:first-child {
+	margin-right: 15px;
+}

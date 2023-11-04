@@ -1,0 +1,22 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.title {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 56px;
+	color: #3f72af;
+	margin-bottom: 32px;
+}
+
+.btn {
+	cursor: pointer;
+	box-sizing: border-box;
+	width: 25px;
+	height: 25px;
+	border: none;
+	background: transparent;
+}

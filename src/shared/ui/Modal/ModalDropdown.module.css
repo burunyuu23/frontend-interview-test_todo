@@ -1,0 +1,70 @@
+.dropdown {
+	cursor: pointer;
+	box-sizing: border-box;
+	width: 364px;
+	height: 24px;
+	position: relative;
+	z-index: 1;
+}
+
+.btn {
+	box-sizing: border-box;
+	padding: 8px;
+	display: flex;
+	align-items: center; /* для треугольника */
+	justify-content: space-between;
+	background: #dbe2ef;
+	border: 2px solid #3f72af;
+	border-radius: 4px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	height: 46px;
+	color: #000;
+}
+
+.placeholder {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+	box-sizing: border-box;
+	position: absolute;
+	top: 45px;
+	background: #dbe2ef;
+	border: 2px solid #3f72af;
+	border-radius: 4px;
+	width: 364px;
+}
+
+.item {
+	position: relative;
+	left: -2px;
+	box-sizing: border-box;
+	padding: 10px;
+	width: 364px;
+	border: none;
+	border-radius: 4px;
+	color: #3f72af;
+}
+
+.item:hover {
+	background-color: #3f72ff;
+	color: #fff;
+}
+
+[for="modalinput"],
+[for="modaltextarea"],
+.label {
+	font-style: normal;
+	display: inline-block;
+	background-color: #dbe2ef;
+	font-weight: 400;
+	padding: 4px;
+	font-size: 18px;
+	line-height: 20px;
+	color: #3f72af;
+	position: absolute;
+	left: 12px;
+	top: -15px;
+}
