@@ -7,7 +7,7 @@ import {ModalEditItemProps} from "../model/props";
 import {Modal, ModalFooter, ModalHeader, ModalInput, ModalRow, ModalTextarea} from "@/shared/ui/Modal";
 import {categoriesUpdated} from "@/entities/Category";
 import {tasksUpdated} from "@/entities/Task";
-import {useAppDispatch} from "@/shared/hooks/hooks";
+import {useAppDispatch} from "@/shared/hooks/redux";
 import {Item} from "@/shared/model/item";
 
 export const ModalEditItem: React.FC<ModalEditItemProps> = ({

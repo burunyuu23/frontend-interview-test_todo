@@ -3,7 +3,7 @@ import React from "react";
 
 /* APPLICATION */
 import {ListItem} from "@/shared/ui/ListItem";
-import {useAppSelector} from "@/shared/hooks/hooks";
+import {useAppSelector} from "@/shared/hooks/redux";
 
 export const Tasks: React.FC = () => {
   const tasks = useAppSelector(state => state.tasks);

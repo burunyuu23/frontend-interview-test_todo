@@ -4,7 +4,7 @@ import React, {useState} from "react";
 /* APPLICATION */
 import down from "@/shared/icons/down.svg";
 import styles from "./ModalDropdown.module.css"
-import {useAppSelector} from "@/shared/hooks/hooks";
+import {useAppSelector} from "@/shared/hooks/redux";
 
 interface ModalDropdownProps {
     selected: string | undefined;

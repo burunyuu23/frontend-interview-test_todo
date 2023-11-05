@@ -7,7 +7,7 @@ import {ModalRemoveItemProps} from "@/features/ModalRemoveItem/model/props";
 import {Modal, ModalFooter, ModalHeader, ModalText} from "@/shared/ui/Modal";
 import {categoriesRemoved} from "@/entities/Category";
 import {tasksClearedCategories, tasksRemoved} from "@/entities/Task";
-import {useAppDispatch} from "@/shared/hooks/hooks";
+import {useAppDispatch} from "@/shared/hooks/redux";
 
 export const ModalRemoveItem: React.FC<ModalRemoveItemProps> = ({
                                                                     item,

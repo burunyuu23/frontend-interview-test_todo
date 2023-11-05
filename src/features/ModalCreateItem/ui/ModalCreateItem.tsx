@@ -7,7 +7,7 @@ import {ModalCreateItemProps} from "@/features/ModalCreateItem/model/props";
 import {Modal, ModalFooter, ModalHeader, ModalInput, ModalRow, ModalTextarea} from "@/shared/ui/Modal";
 import {categoriesAdded} from "@/entities/Category";
 import {tasksAdded} from "@/entities/Task";
-import {useAppDispatch} from "@/shared/hooks/hooks";
+import {useAppDispatch} from "@/shared/hooks/redux";
 
 export const ModalCreateItem: React.FC<ModalCreateItemProps> = ({
                                                                     active,
