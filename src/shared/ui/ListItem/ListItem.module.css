@@ -3,7 +3,7 @@
 	padding: 10px;
 	margin: auto;
 	display: grid;
-	grid-template-columns: 14fr 1fr;
+	grid-template-columns: 12.5fr 0.5fr 1fr;
 	justify-content: space-between;
 	width: min(1000px, 100dvw);
 	height: 100%;
