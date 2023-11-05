@@ -2,11 +2,13 @@
 	box-sizing: border-box;
 	padding: 10px;
 	margin: auto;
-	display: flex;
+	display: grid;
+	grid-template-columns: 14fr 1fr;
 	justify-content: space-between;
 	width: min(1000px, 100dvw);
-	height: 80px;
+	height: 100%;
 	border-bottom: 2px solid #3f72af;
+	word-break: break-all;
 }
 
 .item:hover {
