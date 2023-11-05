@@ -1,6 +1,6 @@
 /* VENDOR */
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { v4 as uuidv4 } from "uuid";
+import {createSlice, PayloadAction} from "@reduxjs/toolkit";
+import {v4 as uuidv4} from "uuid";
 
 /* APPLICATION */
 import {Category} from "@/entities/Category";
@@ -27,14 +27,14 @@ export const categoriesSlice = createSlice({
     name: "categories",
     initialState,
     reducers: {
-        categoriesAdded: (state, action) => {
+        categoriesAdded: (state, action: PayloadAction<Omit<Category, "id">>) => {
             state.push({
                 id: uuidv4(),
                 ...action.payload,
             });
         },
-        categoriesUpdated: (state, action) => {
-            const { id, name, description } = action.payload,
+        categoriesUpdated: (state, action: PayloadAction<Category>) => {
+            const {id, name, description} = action.payload,
                 existingCategory = state.find((category) => category.id === id);
 
             if (existingCategory) {
@@ -44,7 +44,7 @@ export const categoriesSlice = createSlice({
         },
         categoriesRemoved: (
             state: Category[],
-            action: PayloadAction<string>
+            action: PayloadAction<Category["id"]>
         ) => {
             let rm = (el: Category) =>
                     el.id === action.payload,
@@ -55,7 +55,7 @@ export const categoriesSlice = createSlice({
     },
 });
 
-export const { categoriesAdded, categoriesUpdated, categoriesRemoved } =
+export const {categoriesAdded, categoriesUpdated, categoriesRemoved} =
     categoriesSlice.actions;
 
 export const categoriesReducer = categoriesSlice.reducer;
