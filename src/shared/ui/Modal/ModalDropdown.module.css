@@ -21,6 +21,7 @@
 	font-size: 20px;
 	height: 46px;
 	color: #000;
+	overflow: auto;
 }
 
 .placeholder {
