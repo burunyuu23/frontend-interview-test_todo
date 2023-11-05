@@ -30,9 +30,12 @@ export const ModalDropdown: React.FC<ModalDropdownProps> = ({
                 <div className={styles.content}>
                     {options.map((option) => (
                         <div
-                            className={styles.item}
+                            className={[styles.item, selected === option.id && styles.selected].join(" ")}
                             onClick={() => {
-                                setSelected(option.id);
+                                if (selected === option.id)
+                                    setSelected("");
+                                else
+                                    setSelected(option.id);
                                 setIsActive(false);
                             }}
                             key={option.id}
