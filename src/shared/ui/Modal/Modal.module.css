@@ -20,6 +20,7 @@
 
 .content {
     box-sizing: border-box;
+    max-width: 80dvw;
     width: 800px;
     padding: 24px;
     background: #dbe2ef;
@@ -29,4 +30,7 @@
 
 .content.small {
     width: 600px;
+}
+.content.verysmall {
+    width: 280px;
 }
