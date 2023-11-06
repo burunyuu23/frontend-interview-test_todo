@@ -21,13 +21,13 @@ export const Modal: React.FC<ModalProps> = ({
 }) => {
   return (
     <div
-      className={[styles.modal, active ? styles.active : ""].join(" ")}
+      className={[styles.modal, active && styles.active].join(" ")}
       onClick={() => {
         clearState && clearState();
         setActive(false);
       }}
     >
-      <div className={styles.content} onClick={(e) => e.stopPropagation()}>
+      <div className={[styles.content].join(" ")} onClick={(e) => e.stopPropagation()}>
         {children}
       </div>
     </div>

@@ -21,6 +21,7 @@
 	font-size: 20px;
 	height: 46px;
 	color: #000;
+	overflow: auto;
 }
 
 .placeholder {
@@ -50,6 +51,18 @@
 
 .item:hover {
 	background-color: #3f72ff;
+	color: #fff;
+}
+
+.selected {
+	background-color: #72ff3f;
+	border: 2px solid #3f72af;
+	border-bottom: 0;
+	border-top: 0;
+	color: #3f72af;
+}
+.selected:hover {
+	background-color: #ff3f72;
 	color: #fff;
 }
 

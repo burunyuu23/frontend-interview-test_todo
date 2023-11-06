@@ -5,17 +5,13 @@ import React, {useState} from "react";
 import edit from "@/shared/icons/edit.svg";
 import remove from "@/shared/icons/remove.svg";
 import styles from "./ListItem.module.css"
-import {useAppSelector} from "@/shared/hooks/hooks";
+import {useAppSelector} from "@/shared/hooks/redux";
 import {ModalEditItem} from "@/features/ModalEditItem";
 import {ModalRemoveItem} from "@/features/ModalRemoveItem";
+import {Item} from "@/shared/model/item";
 
 interface ListItemProps {
-    item: {
-        id: string;
-        name: string;
-        description: string;
-        category?: string;
-    };
+    item: Item
 }
 
 export const ListItem: React.FC<ListItemProps> = ({item}) => {
@@ -39,6 +35,7 @@ export const ListItem: React.FC<ListItemProps> = ({item}) => {
                 </div>
                 <div className={styles.descriptionContainer}>{item.description}</div>
             </div>
+            <div/>
             <div>
                 <button
                     className={styles.button}

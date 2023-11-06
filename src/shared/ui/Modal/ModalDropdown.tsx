@@ -4,7 +4,7 @@ import React, {useState} from "react";
 /* APPLICATION */
 import down from "@/shared/icons/down.svg";
 import styles from "./ModalDropdown.module.css"
-import {useAppSelector} from "@/shared/hooks/hooks";
+import {useAppSelector} from "@/shared/hooks/redux";
 
 interface ModalDropdownProps {
     selected: string | undefined;
@@ -30,9 +30,12 @@ export const ModalDropdown: React.FC<ModalDropdownProps> = ({
                 <div className={styles.content}>
                     {options.map((option) => (
                         <div
-                            className={styles.item}
+                            className={[styles.item, selected === option.id && styles.selected].join(" ")}
                             onClick={() => {
-                                setSelected(option.id);
+                                if (selected === option.id)
+                                    setSelected("");
+                                else
+                                    setSelected(option.id);
                                 setIsActive(false);
                             }}
                             key={option.id}
